@@ -4,6 +4,5 @@ language: cpp
 compiler: gcc
     
 script:
-  - output.txt < echo "xxxx"
+  - output.txt < ps -aux
   - cat output.txt
-
