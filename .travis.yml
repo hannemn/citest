@@ -6,3 +6,4 @@ compiler: gcc
 script:
   - output.txt < echo "xxxx"
   - cat output.txt
+
