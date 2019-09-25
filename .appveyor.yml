@@ -4,6 +4,9 @@ image: Visual Studio 2015
 
 install:
   - curl -fsS -O https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-1.10/hdf5-1.10.0/bin/windows/extra/hdf5-1.10.0-win64-VS2015-shared.zip
-  - 7z hdf5-1.10.0-win64-VS2015-shared.zip
+  - 7z x -bb0 hdf5-1.10.0-win64-VS2015-shared.zip
+  - msiexec /package hdf5\HDF5-1.10.0-win64.msi /quiet
+  - dir "C:\Program Files"
+  
 build_script:
   - dir
