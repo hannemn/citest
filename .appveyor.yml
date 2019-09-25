@@ -3,7 +3,7 @@ version: "{build}"
 image: Visual Studio 2015
 
 install:
-  - curl -fsS https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-1.10/hdf5-1.10.0/bin/windows/extra/hdf5-1.10.0-win64-VS2015-shared.zip
-  
+  - curl -fsS -O https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-1.10/hdf5-1.10.0/bin/windows/extra/hdf5-1.10.0-win64-VS2015-shared.zip
+  - 7z hdf5-1.10.0-win64-VS2015-shared.zip
 build_script:
   - dir
